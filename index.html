@@ -1,0 +1,105 @@
+<html>
+	<head> 
+	<title>Idea Capture form</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	</head>
+	<table border="0" cell padding= "0" cellSpacing ="0">
+<td Width = "1500" height = "100"
+background = "pic.jpg" valign="center">
+</td>
+</table>
+
+<head>
+<script type= "text/javascript">
+function validate() {
+submitOK=True"
+x=document.form1
+name1=x.uname.value
+if (name1.lenght==0)
+{
+ alert(" The title field cannot remain blank.")
+ submitOK="False"
+}
+else if (name1.length>20 {
+ alert("The title cannot exceed 20 characters")
+submitOK= "False"
+}
+Description2=x. Description.value
+if (description.length==0)
+ {
+alert(" The description field cannot remain blank.")
+ submitOK="False"
+ }
+Category=x. category.value
+if (category.length==0)
+ {
+alert("The categoryfield cannot remain blank.")
+ submitOK="False"
+ }
+Terms=x. Terms.value
+if (terms.length==0)
+ {
+alert(" The terms field cannot remain blank.")
+ submitOK="False"
+ }
+</script>
+</head>
+
+
+<head>
+<script>
+emailattherate=x.email.value.indexOf("@"and ".")
+if (emailattherate==-1)
+{
+alert(invaild E-mail")
+submitOK="False"
+if (submitOK==" False")
+   {
+return false
+   }
+}
+
+</script>
+</head>
+
+
+		<body>
+			<div id = "main">
+			<h1>Idea Capture Form</h1>
+			<hr>
+			<h4> Title </h4> <input type = "text" placeholder = "Title of your idea to be innovated">
+			<br>
+			<h4>Choose Category</h4>
+			<select>
+			<option> Category 1 </option>
+			<option> Category 2 </option>
+			<option> Category 3 </option>
+			</select>
+			<h4>Description</h4>
+			<textarea cols = "50" rows = "20" placeholder = "Description of your idea"></textarea>
+			<h4> Idea image </h4>
+			
+			<h4> Idea Privacy :
+			<br>
+			Private<input type="radio" name = "select" />
+			<br>
+			Public<input type="radio" name = "select" />
+			<br>
+			<br>
+			Terms and conditions acceptance <input type="checkbox" name = ""/>
+
+			<br>
+			<br>
+			<br>
+		
+		 
+			
+				<form id = "email_form" method = "get" action = "submit_successful.html" onsubmit="javascript:return validate('email_form','email');">
+				<h4> email address : </h4> <input type = "text" id="email" name="email"/>
+			<input type="submit" value="Submit"/>
+		</form>
+		
+		
+		</div>
+		</body>
+</html>
